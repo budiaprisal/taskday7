@@ -1,0 +1,310 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="p-3 m-0 border-0 bd-example bd-example-row">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/logo.png" alt="logo" />
+        </a>
+
+        <!--hamburger menu-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--hamburger menu-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link page navigation example text-orange" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page navigation example" aria-current="page" href="/blog">Add Project</a>
+            </li>
+          </ul>
+          <a href="/contact" class="btn btn-dark text-white px-3" type="submit">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <h2>Hai WELCOME TO MY HUT</h2>
+              <p class="text1">
+                A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image. As you can
+                see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no
+                tangible information at. It simply takes up space and should not really be read. And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content.
+                A joke, perhaps. Unfortunately, there's none of that here.
+              </p>
+              <a href="#" class="btn btn-dark px-3">Contact</a><span> Donwload CV <img src="assets/download.png" width="30px" /></span><br /><br />
+              <h5>Found Me On</h5>
+              <div class="social-media">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 18rem">
+                <img src="assets/orang.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-center">RHOMA IRAMA</h5>
+                  <p class="card-text">FULLSTACK DEVELOPER</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-center">MY PROJECT</h2>
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        {{! pembuka tag }}
+        <div class="col blog">
+          
+          
+              
+             
+               {{#each dataBlog}}
+               <p>{{this.title}}</p>
+                  {{/each}}
+              <div class="card-body">
+                <img src="assets/astronaut.jpg" class="card-img-top" alt="..." />
+                <a href="/blog-detail/1" target="_blank">pasar coding diindonesi dinilai masi menjad{{this.title}}</a>
+
+               
+                  <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+            </div>
+ <small class="text-muted">Last updated 3 mins ago</small>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+
+                <div class="social-media">
+                  <i class="bi bi-google-play"></i>
+                  <i class="bi bi-android2"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <br />
+                <a href="#" class="btn btn-dark px-5">Edit</a>
+                <a href="#" class="btn btn-dark px-5">Delete</a>
+              </div>
+            </div>
+        <div class="col blog">
+          
+          
+              
+             
+               {{#each dataBlog}}
+               <p>{{this.title}}</p>
+                  {{/each}}
+              <div class="card-body">
+                <img src="assets/astronaut.jpg" class="card-img-top" alt="..." />
+                <a href="/blog-detail/1" target="_blank">pasar coding diindonesi dinilai masi menjad{{this.title}}</a>
+
+               
+                  <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+            </div>
+ <small class="text-muted">Last updated 3 mins ago</small>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+
+                <div class="social-media">
+                  <i class="bi bi-google-play"></i>
+                  <i class="bi bi-android2"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <br />
+                <a href="#" class="btn btn-dark px-5">Edit</a>
+                <a href="#" class="btn btn-dark px-5">Delete</a>
+              </div>
+            </div>
+             <div class="col blog">
+          
+          
+              
+             
+               {{#each dataBlog}}
+               <p>{{this.title}}</p>
+                  {{/each}}
+              <div class="card-body">
+                <img src="assets/astronaut.jpg" class="card-img-top" alt="..." />
+                <a href="/blog-detail/1" target="_blank">pasar coding diindonesi dinilai masi menjad{{this.title}}</a>
+
+               
+                  <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+            </div>
+ <small class="text-muted">Last updated 3 mins ago</small>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+
+                <div class="social-media">
+                  <i class="bi bi-google-play"></i>
+                  <i class="bi bi-android2"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <br />
+                <a href="#" class="btn btn-dark px-5">Edit</a>
+                <a href="#" class="btn btn-dark px-5">Delete</a>
+              </div>
+            </div>
+             <div class="col blog">
+          
+          
+              
+             
+               {{#each dataBlog}}
+               <p>{{this.title}}</p>
+                  {{/each}}
+              <div class="card-body">
+                <img src="assets/astronaut.jpg" class="card-img-top" alt="..." />
+                <a href="/blog-detail/1" target="_blank">pasar coding diindonesi dinilai masi menjad{{this.title}}</a>
+
+               
+                  <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+            </div>
+ <small class="text-muted">Last updated 3 mins ago</small>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+
+                <div class="social-media">
+                  <i class="bi bi-google-play"></i>
+                  <i class="bi bi-android2"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <br />
+                <a href="#" class="btn btn-dark px-5">Edit</a>
+                <a href="#" class="btn btn-dark px-5">Delete</a>
+              </div>
+            </div>
+             <div class="col blog">
+          
+          
+              
+             
+               {{#each dataBlog}}
+               <p>{{this.title}}</p>
+                  {{/each}}
+              <div class="card-body">
+                <img src="assets/astronaut.jpg" class="card-img-top" alt="..." />
+                <a href="/blog-detail/1" target="_blank">pasar coding diindonesi dinilai masi menjad{{this.title}}</a>
+
+               
+                  <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+            </div>
+ <small class="text-muted">Last updated 3 mins ago</small>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+
+                <div class="social-media">
+                  <i class="bi bi-google-play"></i>
+                  <i class="bi bi-android2"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <br />
+                <a href="#" class="btn btn-dark px-5">Edit</a>
+                <a href="#" class="btn btn-dark px-5">Delete</a>
+              </div>
+            </div>
+             <div class="col blog">
+          
+          
+              
+             
+               {{#each dataBlog}}
+               <p>{{this.title}}</p>
+                  {{/each}}
+              <div class="card-body">
+                <img src="assets/astronaut.jpg" class="card-img-top" alt="..." />
+                <a href="/blog-detail/1" target="_blank">pasar coding diindonesi dinilai masi menjad{{this.title}}</a>
+
+               
+                  <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+            </div>
+ <small class="text-muted">Last updated 3 mins ago</small>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+
+                <div class="social-media">
+                  <i class="bi bi-google-play"></i>
+                  <i class="bi bi-android2"></i>
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <br />
+                <a href="#" class="btn btn-dark px-5">Edit</a>
+                <a href="#" class="btn btn-dark px-5">Delete</a>
+              </div>
+            </div>
+        </div>
+        {{! penutup tag }}
+      </div>
+    </div>
+
+  </body>
+</html>
